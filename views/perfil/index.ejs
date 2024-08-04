@@ -4,19 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <style>
+
+        * {
+            margin: 0px;
+        }
+
+        html {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1,
+        h2 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+
+        h1 {
+            color: crimson;
+            font-size: 124px;
+        }
+
+        h2 {
+            color: #343434;
+            font-size: 40px;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+        }
+
+        .page-box {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 5px;
+        }
+    </style>
+
     <title>Página de Perfil</title>
 </head>
 
 <body>
+    <div class="page-box">
 
-    <h1>
-        <%= userName %>
-    </h1>
-    <h2>
-        <%= userAge %> anos - <%= userCity %>/<%= userEstate %>
-    </h2>
+        <h1>
+            <%= userName %>
+        </h1>
+        <h2>
+            <%= userAge %> anos - <%= userCity %>/<%= userEstate %>
+        </h2>
 
+    </div>
 </body>
 
 </html>
